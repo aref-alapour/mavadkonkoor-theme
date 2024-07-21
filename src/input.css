@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "light-yekanbakh";
+        font-style: normal;
+        src: local("Yekan Bakh"),
+        url("../fonts/yekan-bakh/yekan-bakh-light.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "regular-yekanbakh";
+        font-style: normal;
+        src: local("Yekan Bakh"),
+        url("../fonts/yekan-bakh/yekan-bakh-regular.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "medium-yekanbakh";
+        font-style: normal;
+        src: local("Yekan Bakh"),
+        url("../fonts/yekan-bakh/yekan-bakh-medium.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "bold-yekanbakh";
+        font-style: normal;
+        src: local("Yekan Bakh"),
+        url("../fonts/yekan-bakh/yekan-bakh-bold.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "heavy-yekanbakh";
+        font-style: normal;
+        src: local("Yekan Bakh"),
+        url("../fonts/yekan-bakh/yekan-bakh-heavy.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "fat-yekanbakh";
+        font-style: normal;
+        src: local("Yekan Bakh"),
+        url("../fonts/yekan-bakh/yekan-bakh-fat.woff2") format("woff2");
+        font-display: swap;
+    }
+    * {
+        @apply font-regular-yekanbakh;
+    }
+
+    img {
+        @apply w-full h-auto;
+    }
+
+    body {
+        @apply text-regular-b3 font-regular-yekanbakh;
+    }
+
+    p > a {
+        @apply text-heavy-a1 font-heavy-yekanbakh text-secondary-500 hover:text-secondary-600 transition-colors;
+    }
+}
+
+@layer components {
+    .dir-ltr {
+        direction: ltr
+    }
+
+    .dir-rtl {
+        direction: rtl
+    }
+    .menu-item-has-children{
+        @apply relative;
+    }
+    .menu-item-has-children > a{
+      @apply after:content-[url(../images/dependencies/angle-down.svg)] flex items-center after:mt-1 gap-x-1.5 after:w-2;
+    }
+  .mask-section {
+    mask: url("../images/dependencies/md-header.svg");
+    mask-position: center bottom;
+    mask-repeat: no-repeat;
+    background-color: white;
+  }
+  /*Responsive Dependency*/
+@media screen and (min-width: 1024px) {
+  .mask-section {
+    mask: url("../images/dependencies/lg-header.svg");
+    mask-position: bottom;
+    background-color: white;
+  }
+    .sub-menu {
+        @apply absolute top-10 right-0 bg-white min-w-fit child:text-nowrap px-6 divide-y child:py-4 rounded-2xl border;
+    }
+}
+}
