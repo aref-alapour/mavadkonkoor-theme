@@ -13,6 +13,7 @@ module.exports = {
       },
       dropShadow: {
         'box-shadow': '0 1px 8px rgba(0, 0, 0, 0.1)',
+        'box-shadow-2': '0 -7px 3px rgba(0, 0, 0, 0.1)',
       },
       colors: {
         "primary": {

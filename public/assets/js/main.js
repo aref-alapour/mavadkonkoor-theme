@@ -18,3 +18,20 @@ $('#mobile-menu-close').click(function (){
     $("#mobile-menu-section").animate({right: '-110%'}, 1000, function(){$(this).hide();});
     $("#mobile-menu-close").animate({scale:'0'}, 1000, function(){$(this).hide();});
 })
+const swiper = new Swiper("#showcaseSlider", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    autoplay: {
+        duration: 5000,
+        pauseOnMouseEnter: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

@@ -82,6 +82,12 @@
     mask-repeat: no-repeat;
     background-color: white;
   }
+    .mask-section-showcase {
+        mask: url("../images/dependencies/bottom-showcase-md.svg");
+        mask-position: center top;
+        mask-repeat: no-repeat;
+        background-color: white;
+    }
   /*Responsive Dependency*/
 @media screen and (min-width: 1024px) {
   .mask-section {
@@ -89,8 +95,23 @@
     mask-position: bottom;
     background-color: white;
   }
+    .mask-section-showcase {
+    mask: url("../images/dependencies/bottom-showcase-lg.svg");
+    mask-position: top;
+    background-color: white;
+  }
     .sub-menu {
         @apply absolute top-10 right-0 bg-white min-w-fit child:text-nowrap px-6 divide-y child:py-4 rounded-2xl border;
     }
 }
+}
+.showcaseSlider-pagination .swiper-pagination-bullet {
+    background: #9C9C9C;
+    transition: all .3s ease;
+}
+
+.showcaseSlider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #00B8E9;
+    width: 20px;
+    border-radius: 30px;
 }
