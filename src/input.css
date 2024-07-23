@@ -97,7 +97,8 @@
   }
     .mask-section-showcase {
     mask: url("../images/dependencies/bottom-showcase-lg.svg");
-    mask-position: top;
+    mask-position: center top;
+        mask-repeat: no-repeat;
     background-color: white;
   }
     .sub-menu {
@@ -114,4 +115,7 @@
     background: #00B8E9;
     width: 20px;
     border-radius: 30px;
+}
+.swiper.horizontal-default-slider > .swiper-wrapper > .swiper-slide {
+    transform: unset;
 }

@@ -112,6 +112,7 @@ module.exports = {
       'heavy-h6': ['20px',{lineHeight: '36px', fontWeight: '900',}],
       'heavy-b1': ['16px',{lineHeight: '20px', fontWeight: '900',}],
       'heavy-c1': ['14px',{lineHeight: '22px', fontWeight: '900',}],
+      'heavy-c2': ['18px',{lineHeight: 'auto', fontWeight: '900',}],
       'heavy-s1': ['12px',{lineHeight: '18px', fontWeight: '900',}],
       'heavy-t1': ['10px',{lineHeight: '16px', fontWeight: '900',}],
       'heavy-a1': ['18px',{lineHeight: '40px', fontWeight: '900',}],

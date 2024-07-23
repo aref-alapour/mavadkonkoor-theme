@@ -18,6 +18,7 @@ $('#mobile-menu-close').click(function (){
     $("#mobile-menu-section").animate({right: '-110%'}, 1000, function(){$(this).hide();});
     $("#mobile-menu-close").animate({scale:'0'}, 1000, function(){$(this).hide();});
 })
+//homePage Showcase Slider
 const swiper = new Swiper("#showcaseSlider", {
     spaceBetween: 30,
     effect: "fade",
@@ -34,4 +35,11 @@ const swiper = new Swiper("#showcaseSlider", {
         el: ".swiper-pagination",
         clickable: true,
     },
+});
+document.addEventListener("DOMContentLoaded", () => {
+    const swiperDefaultSlider = new Swiper(".horizontal-default-slider", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        freeMode: true,
+    });
 });
