@@ -42,6 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 20,
         freeMode: true,
     });
+    const swiperClassProductSlider = new Swiper(".class-product-slider", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        freeMode: true,
+        navigation: {
+            nextEl: "#class-product-slider-prev",
+            prevEl: "#class-product-slider-next",
+        },
+    });
     // topRatingSlider
     const topRatingSwiper = new Swiper(".top-rating-slider", {
         direction: 'horizontal',

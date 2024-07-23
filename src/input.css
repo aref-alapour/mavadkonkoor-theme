@@ -92,6 +92,14 @@
         mask-repeat: no-repeat;
         background-color: white;
     }
+    .mask-section-class-book {
+        mask: url("../images/dependencies/home-bg-middle-mask.svg");
+        mask-position: center top;
+        mask-repeat: no-repeat;
+        background-color: white;
+        background-position: center center;
+        background-size: cover;
+    }
 
     /*Responsive Dependency*/
     @media screen and (min-width: 1024px) {
@@ -141,5 +149,8 @@
 }
 
 .swiper.horizontal-default-slider > .swiper-wrapper > .swiper-slide {
+    transform: unset;
+}
+.swiper.class-product-slider > .swiper-wrapper > .swiper-slide {
     transform: unset;
 }
