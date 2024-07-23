@@ -70,42 +70,65 @@
     .dir-rtl {
         direction: rtl
     }
-    .menu-item-has-children{
+
+    .menu-item-has-children {
         @apply relative;
     }
-    .menu-item-has-children > a{
-      @apply after:content-[url(../images/dependencies/angle-down.svg)] flex items-center after:mt-1 gap-x-1.5 after:w-2;
+
+    .menu-item-has-children > a {
+        @apply after:content-[url(../images/dependencies/angle-down.svg)] flex items-center after:mt-1 gap-x-1.5 after:w-2;
     }
-  .mask-section {
-    mask: url("../images/dependencies/md-header.svg");
-    mask-position: center bottom;
-    mask-repeat: no-repeat;
-    background-color: white;
-  }
+
+    .mask-section {
+        mask: url("../images/dependencies/md-header.svg");
+        mask-position: center bottom;
+        mask-repeat: no-repeat;
+        background-color: white;
+    }
+
     .mask-section-showcase {
         mask: url("../images/dependencies/bottom-showcase-md.svg");
         mask-position: center top;
         mask-repeat: no-repeat;
         background-color: white;
     }
-  /*Responsive Dependency*/
-@media screen and (min-width: 1024px) {
-  .mask-section {
-    mask: url("../images/dependencies/lg-header.svg");
-    mask-position: bottom;
-    background-color: white;
-  }
-    .mask-section-showcase {
-    mask: url("../images/dependencies/bottom-showcase-lg.svg");
-    mask-position: center top;
-        mask-repeat: no-repeat;
-    background-color: white;
-  }
-    .sub-menu {
-        @apply absolute top-10 right-0 bg-white min-w-fit child:text-nowrap px-6 divide-y child:py-4 rounded-2xl border;
+
+    /*Responsive Dependency*/
+    @media screen and (min-width: 1024px) {
+        .mask-section {
+            mask: url("../images/dependencies/lg-header.svg");
+            mask-position: bottom;
+            background-color: white;
+        }
+
+        .mask-section-showcase {
+            mask: url("../images/dependencies/bottom-showcase-lg.svg");
+            mask-position: center top;
+            mask-repeat: no-repeat;
+            background-color: white;
+        }
+
+        .mask-section-toprating {
+            mask: url("../images/dependencies/Union-1024.svg");
+            mask-position: center center;
+            mask-repeat: no-repeat;
+            background-color: white;
+        }
+
+        .sub-menu {
+            @apply absolute top-10 right-0 bg-white min-w-fit child:text-nowrap px-6 divide-y child:py-4 rounded-2xl border;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        .mask-section-toprating {
+            mask: url("../images/dependencies/Union.svg");
+            mask-position: center center;
+            mask-repeat: no-repeat;
+            background-color: white;
+        }
     }
 }
-}
+
 .showcaseSlider-pagination .swiper-pagination-bullet {
     background: #9C9C9C;
     transition: all .3s ease;
@@ -116,6 +139,7 @@
     width: 20px;
     border-radius: 30px;
 }
+
 .swiper.horizontal-default-slider > .swiper-wrapper > .swiper-slide {
     transform: unset;
 }
