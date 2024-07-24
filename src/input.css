@@ -99,7 +99,13 @@
         background-position: center center;
         background-size: cover;
     }
-
+    .mask-section-online-exam {
+        mask: url("../images/dependencies/mask-exam.svg");
+        mask-position: center center;
+        mask-repeat: no-repeat;
+        background-color: white;
+        mask-size: contain;
+    }
     /*Responsive Dependency*/
     @media screen and (min-width: 1024px) {
         .mask-section {
@@ -156,4 +162,10 @@
 }
 .swiper.class-product-slider > .swiper-wrapper > .swiper-slide {
     transform: unset;
+}
+.gr-purple {
+    background: linear-gradient(115deg, #C9C2F4 -20.98%, #7E75B6 31.06%, #373350 93.09%)
+}
+.gr-purple-2 {
+    background: linear-gradient(70deg, #C9C2F4 -37.84%, #7E75B6 13.03%, #373350 134.11%)
 }
