@@ -83,4 +83,15 @@ document.addEventListener("DOMContentLoaded", () => {
             prevEl: "#top-rating-slider-next",
         },
     });
+    // comment slider
+    const userCommentSwiper = new Swiper(".comment-carousel-slider", {
+        direction: "vertical",
+        effect: 'slide',
+        centeredSlides: true,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: "#comment-carousel-slider-prev",
+            prevEl: "#comment-carousel-slider-next",
+        },
+    });
 });
