@@ -51,6 +51,22 @@ document.addEventListener("DOMContentLoaded", () => {
             prevEl: "#class-product-slider-next",
         },
     });
+    const swiperNewsSlider = new Swiper(".news-section-slider", {
+        slidesPerView: "auto",
+        spaceBetween: 18,
+        freeMode: true,
+        navigation: {
+            nextEl: "#news-section-slider-prev",
+        },
+    });
+    const swiperBlogSlider = new Swiper(".blog-section-slider", {
+        slidesPerView: "auto",
+        spaceBetween: 18,
+        freeMode: true,
+        navigation: {
+            nextEl: "#blog-section-slider-prev",
+        },
+    });
     // topRatingSlider
     const topRatingSwiper = new Swiper(".top-rating-slider", {
         direction: 'horizontal',

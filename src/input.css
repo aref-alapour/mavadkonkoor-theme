@@ -56,6 +56,9 @@
     body {
         @apply text-regular-b3 font-regular-yekanbakh;
     }
+    p{
+        @apply text-body-text-color;
+    }
 
     p > a {
         @apply text-heavy-a1 font-heavy-yekanbakh text-secondary-500 hover:text-secondary-600 transition-colors;
@@ -168,4 +171,10 @@
 }
 .gr-purple-2 {
     background: linear-gradient(70deg, #C9C2F4 -37.84%, #7E75B6 13.03%, #373350 134.11%)
+}
+.gr-footer-bg {
+    background: linear-gradient(30deg, #201C2E 24.33%, #2C273F 53.71%, #4F4972 104.22%);
+}
+.text-h-shadow {
+    text-shadow: 0px 4px 4px rgb(0,0,0,.25);
 }

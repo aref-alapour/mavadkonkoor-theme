@@ -43,7 +43,8 @@ module.exports = {
         "nav-link": {
           "normal": "#0A184A",
           "hover": "#0e2368"
-        }
+        },
+        "body-text-color": "#0A184A"
       },
       keyframes: {
         off: {
@@ -125,6 +126,7 @@ module.exports = {
       'bold-h6': ['20px',{lineHeight: '24px', fontWeight: '700',}],
       'bold-b1': ['16px',{lineHeight: '32px', fontWeight: '700',}],
       'bold-b2': ['18px',{lineHeight: '38px', fontWeight: '700',}],
+      'bold-b3': ['16px',{lineHeight: '208%', fontWeight: '700',}],
       'bold-c1': ['14px',{lineHeight: '22px', fontWeight: '700',}],
       'bold-s1': ['12px',{lineHeight: '18px', fontWeight: '700',}],
       'bold-t1': ['10px',{lineHeight: '16px', fontWeight: '700',}],
