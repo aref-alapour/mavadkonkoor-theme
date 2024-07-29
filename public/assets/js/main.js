@@ -110,4 +110,28 @@ document.addEventListener("DOMContentLoaded", () => {
             prevEl: "#comment-carousel-slider-next",
         },
     });
+    //faq
+    const questionBtn = document.querySelectorAll(".question-btn"),
+        answerContent = document.querySelectorAll(".answer-content");
+    function answerContentActive() {
+        answerContent.forEach((element) => {
+            element.style.height = "0px";
+        });
+    }
+    questionBtn.forEach((element) => {
+        element.addEventListener("click", function () {
+            let answerID = this.getAttribute("data-target-content");
+            let btnID = this.getAttribute("data-question-btn");
+            let answerContent = document.getElementById(answerID);
+            let questionBtn = document.getElementById(btnID);
+            answerContentActive();
+            if (answerContent.clientHeight > 0) {
+                answerContent.style.height = "0px";
+                questionBtn.style.transform = "rotate(0deg)";
+            } else {
+                answerContent.style.height = answerContent.scrollHeight + "px";
+                questionBtn.style.transform = "rotate(90deg)";
+            }
+        });
+    });
 });
