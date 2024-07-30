@@ -172,9 +172,30 @@
 .gr-purple-2 {
     background: linear-gradient(70deg, #C9C2F4 -37.84%, #7E75B6 13.03%, #373350 134.11%)
 }
-.gr-footer-bg {
-    background: linear-gradient(30deg, #201C2E 24.33%, #2C273F 53.71%, #4F4972 104.22%);
-}
 .text-h-shadow {
     text-shadow: 0px 4px 4px rgb(0,0,0,.25);
+}
+.consulation-request-form >div > form {
+    @apply mt-6 flex flex-col md:flex-row justify-center items-center gap-3;
+}
+.consulation-request-form >div > form > div.gform-body > div {
+    @apply flex gap-x-3;
+}
+.consulation-request-form >div > form > div.gform-body > div label {
+    @apply hidden;
+}
+.consulation-request-form >div > form > div.gform-body > div input {
+    @apply w-1/2 md:w-auto rounded-xl placeholder:text-medium-s1 placeholder:font-medium-yekanbakh px-4 placeholder:text-right focus:outline-none;
+}
+.consulation-request-form >div > form > div.gform_footer {
+    @apply !mt-0;
+}
+.consulation-request-form .gform-theme--foundation .gform_footer, .gform-theme--foundation .gform_page_footer {
+    @apply !mt-0;
+}
+.consulation-request-form >div > form > div.gform_footer > input {
+    @apply !bg-[#E16C00] !text-white !border border-[#0A184A] !shadow-[0px_4px_0px_0px_rgb(10,24,74,1)] !rounded-xl !w-full md:!w-auto !text-heavy-b1 !font-heavy-yekanbakh !py-2.5 !px-6 !cursor-pointer;
+}
+.consulation-request-form  div.gform_confirmation_message {
+    @apply text-center mt-5 text-white font-bold-yekanbakh font-bold;
 }
