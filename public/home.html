@@ -116,7 +116,7 @@
                     <li><a href="#">خانه</a></li>
                     <li class="menu-item-has-children">
                         <a href="#" class="">دکتری</a>
-                        <ul class="sub-menu" style="display: none">
+                        <ul class="sub-menu">
                             <li><a href="#">کلاس آنلاین</a></li>
                             <li><a href="#">آزمون آنلاین</a></li>
                             <li><a href="#">کتاب‌های آموزشی</a></li>
@@ -124,7 +124,7 @@
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#">کارشناسی ارشد</a>
-                        <ul class="sub-menu" style="display: none">
+                        <ul class="sub-menu">
                             <li><a href="#">کلاس آنلاین</a></li>
                             <li><a href="#">آزمون آنلاین</a></li>
                             <li><a href="#">کتاب‌های آموزشی</a></li>
@@ -140,11 +140,11 @@
                     <span class="font-medium font-medium-yekanbakh text-[#888888] text-[24px]">021</span>
                     <span class="font-heavy-yekanbakh font-black text-[#6530ED] text-[24px]">9130 3340</span>
                 </a>
-                <a href="#"
+                <a href="#ConsultationRequest"
                    class="hidden lg:block bg-[#2D46A0] hover:bg-[#3756C1] transition text-bold-h6 text-white font-bold-yekanbakh text-center content-center px-7 py-2 rounded-xl">مشاوره
                     رایگان</a>
                 <a href="#"
-                   class="flex items-center justify-center bg-secondary-500 hover:bg-secondary-700 transition h-10 w-10 rounded-lg shadow-[0px_4px_14px_0_rgba(101,48,237,0.2)]">
+                   class="animate-scale flex items-center justify-center bg-secondary-500 hover:bg-secondary-700 transition h-10 w-10 rounded-lg shadow-[0px_4px_14px_0_rgba(101,48,237,0.2)]">
                     <svg class="w-5 h-5 fill-white stroke-white">
                         <use href="#mavad-cart-icon"></use>
                     </svg>
@@ -182,6 +182,7 @@
             <li><a href="#" class="!font-bold-yekanbakh !font-bold">ورود کاربران</a></li>
             <li><a href="#">درباره ما</a></li>
             <li><a href="#">تماس با ما</a></li>
+            <li><a href="#ConsultationRequest">مشاوره رایگان</a></li>
         </ul>
     </nav>
     <div class="dir-ltr space-x-2 mt-auto">
@@ -663,13 +664,13 @@
         </div>
         <div>
             <button id="book-slider-next"
-                    class="absolute top-1/2 -translate-y-1/2 right-1.5 xl:right-1 hover:scale-105 transition z-20 bg-white/50 shadow  w-8 h-8 flex items-center justify-center rounded-full">
+                    class="absolute top-1/2 mt-10 right-1.5 xl:right-1 hover:scale-105 transition z-20 bg-white/50 shadow  w-8 h-8 flex items-center justify-center rounded-full">
                 <svg class="w-4 h-4 stroke-[#6530ED]">
                     <use href="#mavad-carousel-angle-icon"></use>
                 </svg>
             </button>
             <button id="book-slider-prev"
-                    class="absolute top-1/2 -translate-y-1/2 left-1.5 xl:left-1 hover:scale-105 transition z-20 bg-white /50 shadow w-8 h-8 flex items-center justify-center rounded-full">
+                    class="absolute top-1/2 mt-10 left-1.5 xl:left-1 hover:scale-105 transition z-20 bg-white /50 shadow w-8 h-8 flex items-center justify-center rounded-full">
                 <svg class="w-4 h-4 stroke-[#6530ED] rotate-180">
                     <use href="#mavad-carousel-angle-icon"></use>
                 </svg>
@@ -679,7 +680,7 @@
 </section>
 <!--BookSlider End-->
 <!--ConsultationRequest Start-->
-<section class="container my-16">
+<section class="container my-16 scroll-mt-30" id="ConsultationRequest">
     <div class="bg-[#2D46A0] bg-[url(../images/dependencies/mail-bg.svg)] bg-center bg-no-repeat bg-cover border border-[#0A184A] rounded-[30px] relative after:content-[''] after:w-[95%] after:h-8 after:mx-auto after:left-0 after:right-0 after:bg-black/30 after:absolute after:-bottom-2 after:rounded-[30px] after:blur-sm after:-z-10 py-8 md:py-10 px-6">
         <div class="text-heavy-b1 font-heavy-yekanbakh tracking-tight md:tracking-normal md:text-bold-h6  md:font-bold-yekanbakh text-white text-center">
             برای دریافت مشاوره رایگان، اسم و شماره تماست وارد کن:
@@ -696,19 +697,19 @@
 </section>
 <!--ConsultationRequest End-->
 <!--TopRating Start-->
-<section class="container my-16">
-    <div class="text-center relative mb-10">
+<section class="md:container mr-4 md:mr-auto my-16">
+    <div class="text-center relative mb-10 ml-4 md:ml-auto">
         <p class="max-w-[300px] md:max-w-[530px] text-bold-b2 select-none font-bold-yekanbakh text-center mx-auto bg-white px-2 px-6">
             این موفقیت‌ها تعهد ما به بهترین آموزش و پشتیبانی برای موفقیت در کنکور مهندسی مواد را نشان می‌دهند.
         </p>
         <hr class="absolute top-5 w-full h-0.5 -z-10">
     </div>
-    <section class="relative lg:h-[557px] shadow-box-shadow lg:shadow-none lg:drop-shadow-box-shadow rounded-3xl">
+    <section class="relative lg:h-[557px] shadow-box-shadow lg:shadow-none lg:drop-shadow-box-shadow rounded-tr-3xl rounded-br-3xl md:rounded-3xl">
         <div class="mask-section-toprating absolute h-full w-full"></div>
-        <section class="px-4 lg:px-24 py-4 lg:py-8 relative">
+        <section class="pr-4 lg:px-24 py-4 lg:py-8 relative">
             <div class="swiper top-rating-slider">
                 <div class="swiper-wrapper pt-8 space-y-5 space-y-reverse">
-                    <div class="swiper-slide bg-white relative border border-neutral-200 rounded-2xl">
+                    <div class="swiper-slide top-rate-cart bg-white relative border border-neutral-200 rounded-2xl">
                         <div class="absolute top-[-30px] left-0 right-0 w-fit mx-auto">
                             <img loading="lazy" src="assets/images/toprait/01.jpg"
                                  class="w-14 h-14 object-cover rounded-full border-2 drop-shadow-[0px_6px_13px_rgb(0,0,0,.15)] border-[#8373B5]"
@@ -974,7 +975,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:block" style="margin-top:-25px;">
+            <div class="hidden lg:block">
                 <button id="top-rating-slider-next"
                         class="absolute top-1/2 -translate-y-1/2 right-4 hover:scale-105 transition">
                     <svg class="w-4 h-4 stroke-[#6530ED]">

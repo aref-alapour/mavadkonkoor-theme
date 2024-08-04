@@ -130,9 +130,11 @@
             mask-repeat: no-repeat;
             background-color: white;
         }
-
+        .menu-item-has-children:hover > .sub-menu {
+            @apply opacity-100 visible transition delay-200;
+        }
         .sub-menu {
-            @apply absolute top-10 right-0 bg-white min-w-fit child:text-nowrap px-6 divide-y child:py-4 rounded-2xl border;
+            @apply absolute top-10 right-0 bg-white min-w-fit child:text-nowrap px-6 divide-y child:py-4 rounded-2xl border opacity-0 invisible delay-200;
         }
     }
     @media screen and (min-width: 1280px) {
@@ -198,4 +200,74 @@
 }
 .consulation-request-form  div.gform_confirmation_message {
     @apply text-center mt-5 text-white font-bold-yekanbakh font-bold;
+}
+input.username-input {
+    @apply border h-10 px-3 py-1 rounded-lg focus:outline-1 focus:outline-secondary-100 w-full bg-[#F6F6F6];
+}
+input.username-input.error {
+    @apply border-red-700 focus:outline-0;
+}
+input.username-input.success {
+    @apply border-green-500 focus:outline-0;
+}
+p.login-form-error {
+    @apply text-xs mt-1 text-red-700;
+}
+
+#loading {
+    --r: 100px;
+    height: var(--r);
+    width: var(--r);
+    -webkit-box-reflect: below 2px linear-gradient(transparent 80%, rgba(0, 0, 0, 0.3));
+}
+.half {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    animation: Loading 2s linear infinite;
+}
+.half:before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: linear-gradient(to top, transparent, #FF6D01);
+    background-size: calc(var(--r) / 2) var(--r);
+    background-repeat: no-repeat;
+    -webkit-mask: radial-gradient(circle, transparent 43px, #000 43px);
+}
+.half:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    color: #6530ED;
+    background: currentColor;
+    border-radius: 50%;
+    box-shadow: 0 0 2.5px, 0 0 5px, 0 0 5px, 0 0 7px, 0 0 8px, 0 0 10px,
+    0 0 11.5px, 0 0 12.5px, 0 0 21px, 0 0 23px;
+    z-index: 10;
+}
+.half:nth-child(2) {
+    animation-delay: -1s;
+    filter: hue-rotate(150deg);
+}
+@keyframes Loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+#mobile-otp-page::-webkit-inner-spin-button,#mobile-otp-page::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

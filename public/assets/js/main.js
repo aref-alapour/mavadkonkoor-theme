@@ -1,8 +1,10 @@
-$('.menu-item-has-children').hover(function() {
-    $(this).find('.sub-menu').stop().delay(200).animate({
-        height: 'toggle'
-    }, 300);
-});
+if ($(window).width() < 768) {
+    $('.menu-item-has-children').click(function() {
+        $(this).find('.sub-menu').stop().delay(200).animate({
+            height: 'toggle'
+        }, 300);
+    });
+}
 $('#mobile-menu-open').click(function (){
     $("#overlay").show().animate({scale:'1'},300);
     $('#mobile-menu-section').show().animate({right: "0"}, 1000);
@@ -79,10 +81,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // topRatingSlider
     const topRatingSwiper = new Swiper(".top-rating-slider", {
         direction: 'horizontal',
-        slidesPerView: 2,
+        slidesPerView: 2.2,
         grid: {
             rows: 2,
             fill: "row",
+        },
+        autoplay: {
+            duration: 3000,
+            pauseOnMouseEnter: true
         },
         breakpoints: {
             768: {
@@ -143,4 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+});
+$(".top-rate-cart").on("contextmenu", function(e) {
+    e.preventDefault();
 });
