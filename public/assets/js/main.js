@@ -62,6 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
             prevEl: "#class-product-slider-next",
         },
     });
+    const swiperPackageProductSlider = new Swiper(".package-product-slider", {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        freeMode: true,
+        navigation: {
+            nextEl: "#package-product-slider-prev",
+            prevEl: "#package-product-slider-next",
+        },
+    });
     const swiperNewsSlider = new Swiper(".news-section-slider", {
         slidesPerView: "auto",
         spaceBetween: 18,
