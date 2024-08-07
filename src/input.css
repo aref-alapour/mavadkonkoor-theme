@@ -95,6 +95,14 @@
         mask-repeat: no-repeat;
         background-color: white;
     }
+    .package-mask-section-showcase {
+        mask: url("../images/dependencies/package-mask-info-sm.svg");
+        mask-position: center top;
+        mask-repeat: no-repeat;
+        background-color: white;
+        background-position: center center;
+        background-size: contain;
+    }
     .mask-section-class-book {
         mask: url("../images/dependencies/home-bg-middle-mask.svg");
         mask-position: center top;
@@ -123,7 +131,14 @@
             mask-repeat: no-repeat;
             background-color: white;
         }
-
+        .package-mask-section-showcase {
+            mask: url("../images/dependencies/package-mask-info-lg.svg");
+            mask-position: center top;
+            mask-repeat: no-repeat;
+            background-color: white;
+            background-position: center center;
+            background-size: contain;
+        }
         .mask-section-toprating {
             mask: url("../images/dependencies/Union-1024.svg");
             mask-position: center center;
@@ -481,4 +496,26 @@ p.login-form-error {
 }
 .pink-replay{
     fill: #E23DD2;
+}
+.orange-after:before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: linear-gradient(233deg, rgba(225,108,0,1) 0%, rgba(229,199,152,1) 100%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-radius: 100%;
+}
+.purple-after:before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: linear-gradient(233deg, rgba(101, 48, 237, 1) 0%, rgba(202, 183, 252, 1) 100%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-radius: 100%;
 }
