@@ -519,3 +519,70 @@ p.login-form-error {
     right: 0;
     border-radius: 100%;
 }
+.text-gradient-1{
+    background: linear-gradient(288deg, #0A184A 42.14%, #4258A6 75.62%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* WC Custom */
+div#customer_details {
+    display: none;
+}
+
+h3#order_review_heading {
+    display: none;
+}
+
+.woocommerce-checkout-review-order > div#payment {
+    background: unset;
+}
+
+.woocommerce-checkout-review-order > div#payment ul.wc_payment_methods.payment_methods.methods li label {
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    width: fit-content;
+}
+
+.woocommerce-checkout-review-order > div#payment ul.wc_payment_methods.payment_methods.methods li label > img {
+    width: 20px;
+    height: 20px;
+    order: 1;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.payment_box.payment_method_WC_ZPal {
+    display: none !important;
+}
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
+    display: none !important;
+}
+
+#add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
+    padding: unset;
+    border: unset;
+}
+
+ul.wc_payment_methods.payment_methods.methods {}
+
+#add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
+    border-bottom: unset;
+}
+
+.woocommerce-privacy-policy-text > p {
+    display: none;
+}
+
+.woocommerce-terms-and-conditions-wrapper > button[type="submit"] {
+    width: 100%;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    float: unset;
+    width: 100%;
+    background: #FF6D01;
+    border-radius: 10px;
+    padding: 16px;
+}

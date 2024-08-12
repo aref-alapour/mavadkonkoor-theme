@@ -99,6 +99,9 @@
     <symbol id="mavad-arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 8" fill="colorCurrent">
         <path d="M9 4.5C9.27614 4.5 9.5 4.27614 9.5 4C9.5 3.72386 9.27614 3.5 9 3.5V4.5ZM0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM9 3.5L1 3.5V4.5L9 4.5V3.5Z" fill="colorCurrent"/>
     </symbol>
+    <symbol id="mavad-replay-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" fill="colorCurrent">
+        <path d="M15.75 1C15.75 0.585788 15.4142 0.250001 15 0.250001C14.5858 0.250001 14.25 0.585788 14.25 1L15.75 1ZM0.469669 10.4697C0.176776 10.7626 0.176776 11.2374 0.469669 11.5303L5.24264 16.3033C5.53553 16.5962 6.01041 16.5962 6.3033 16.3033C6.59619 16.0104 6.59619 15.5355 6.3033 15.2426L2.06066 11L6.3033 6.75736C6.59619 6.46447 6.59619 5.98959 6.3033 5.6967C6.01041 5.4038 5.53553 5.4038 5.24264 5.6967L0.469669 10.4697ZM14.25 1L14.25 9L15.75 9L15.75 1L14.25 1ZM13 10.25L0.999999 10.25L0.999999 11.75L13 11.75L13 10.25ZM14.25 9C14.25 9.69036 13.6904 10.25 13 10.25L13 11.75C14.5188 11.75 15.75 10.5188 15.75 9L14.25 9Z" fill="colorCurrent"/>
+    </symbol>
 </svg>
 <!--AllIcons End-->
 <!--Header Start-->
@@ -200,7 +203,7 @@
              alt=""/>
         <img src="./assets/images/showcase-adv/package-showcase-info-sm.avif" class="object-cover md:hidden" alt=""/>
     </section>
-    <section class="relative w-full bg-white drop-shadow-box-shadow z-10 min-h-[150px] lg:min-h-[400px] pb-24">
+    <section class="relative w-full bg-white drop-shadow-box-shadow-3 z-10 min-h-[150px] lg:min-h-[400px] pb-30 lg:pb-24">
         <div class="package-mask-section-showcase h-[150px] lg:h-[400px] bottom-[-84px] lg:bottom-[-114px] -z-10 absolute w-full"></div>
         <section class="container py-8">
             <h2 class="text-heavy-h4 font-heavy-yekanbakh mb-4">در لیست رتبه های برتر تک رقمی کنکور قرار بگیرید!</h2>
@@ -209,24 +212,38 @@
             </p>
         </section>
         <section class="relative">
-                <div class="absolute right-0 lg:-right-8 -top-14 lg:top-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="168" height="50" viewBox="0 0 168 50" fill="none">
-                        <path d="M2.86608 46.2424C2.86608 46.2424 73.7154 4.56553 129.828 4.27118C185.941 3.97684 224.775 18.605 224.775 18.605" stroke="url(#paint0_linear_2805_1535)" stroke-width="8"/>
-                        <defs>
-                            <linearGradient id="paint0_linear_2805_1535" x1="-34.2594" y1="-12.7224" x2="167.763" y2="164.455" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#C9C2F4"/>
-                                <stop offset="0.295823" stop-color="#7E75B6"/>
-                                <stop offset="1" stop-color="#373350"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                <div>
+                    <div class="hidden lg:block absolute right-0 -top-16 xl:-top-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="168" height="50" viewBox="0 0 168 50" fill="none">
+                            <path d="M2.86608 46.2424C2.86608 46.2424 73.7154 4.56553 129.828 4.27118C185.941 3.97684 224.775 18.605 224.775 18.605" stroke="url(#paint0_linear_2805_1535)" stroke-width="8"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_2805_1535" x1="-34.2594" y1="-12.7224" x2="167.763" y2="164.455" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C9C2F4"/>
+                                    <stop offset="0.295823" stop-color="#7E75B6"/>
+                                    <stop offset="1" stop-color="#373350"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="lg:hidden absolute right-0 -top-16 xl:-top-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="24" viewBox="0 0 80 24" fill="none">
+                            <path d="M1.22406 21.9241C1.22406 21.9241 33.6096 2.87337 59.2589 2.73883C84.9082 2.60428 102.66 9.29088 102.66 9.29088" stroke="url(#paint0_linear_2994_1954)" stroke-width="4"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_2994_1954" x1="-15.7462" y1="-5.02901" x2="76.5993" y2="75.9593" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C9C2F4"/>
+                                    <stop offset="0.295823" stop-color="#7E75B6"/>
+                                    <stop offset="1" stop-color="#373350"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
-                <div class="container grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-10 mt-24">
+                <div class="container max-w-[1000px] grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-10 mt-24">
                         <div class="mx-2 md:mx-6 lg:mx-10">
                             <h2 class="font-heavy-yekanbakh text-heavy-h5 relative pr-6 orange-after mb-4">
                                 چرا پکیج‌های آموزشی؟
                             </h2>
-                            <p class="text-regular-b3">
+                            <p class="text-regular-b3 text-justify">
                                 ما در  مواد کنکور بر این باوریم که هر دانشجو شایسته بهترین آموزش‌ها و منابع است. به همین دلیل، با همکاری برترین اساتید و متخصصان این رشته، پکیج‌های آموزشی جامعه ای را آماده کرده‌ایم تا شما بتوانید به بهترین شکل ممکن برای کنکور آماده شوید.
                             </p>
                         </div>
@@ -234,29 +251,933 @@
                         <h2 class="font-heavy-yekanbakh text-heavy-h5 relative pr-6 purple-after mb-4">
                             هدف ما از ارائه پکیج‌ با تخفیف
                         </h2>
-                        <p class="text-regular-b3">
+                        <p class="text-regular-b3 text-justify">
                             هدف ما این است که همه دانشجو بدون نگرانی از هزینه، به منابع و آموزش‌های با کیفیت دسترسی داشته باشند. ما می‌خواهیم با این پکیج‌ها، شما را در مسیر موفقیت یاری کنیم و مطمئن شویم که بهترین نتایج را در کنکور کسب خواهید کرد.
                         </p>
                     </div>
                 </div>
-                <div class="absolute left-0 bottom-0 lg:bottom-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="208" height="45" viewBox="0 0 208 45" fill="none">
-                        <path d="M205.235 3.90247C205.235 3.90247 132.791 42.7394 76.7103 40.8102C20.6301 38.8811 -17.5942 22.7257 -17.5942 22.7257" stroke="url(#paint0_linear_2738_1993)" stroke-width="8"/>
-                        <defs>
-                            <linearGradient id="paint0_linear_2738_1993" x1="88.6492" y1="-21.4342" x2="136.504" y2="57.0139" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#E6C798"/>
-                                <stop offset="0.265" stop-color="#ECAE52"/>
-                                <stop offset="1" stop-color="#E16C00"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                <div>
+                    <div class="hidden lg:block absolute left-0  -bottom-16 xl:-bottom-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="208" height="45" viewBox="0 0 208 45" fill="none">
+                            <path d="M205.235 3.90247C205.235 3.90247 132.791 42.7394 76.7103 40.8102C20.6301 38.8811 -17.5942 22.7257 -17.5942 22.7257" stroke="url(#paint0_linear_2738_1993)" stroke-width="8"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_2738_1993" x1="88.6492" y1="-21.4342" x2="136.504" y2="57.0139" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E6C798"/>
+                                    <stop offset="0.265" stop-color="#ECAE52"/>
+                                    <stop offset="1" stop-color="#E16C00"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="lg:hidden absolute left-0  -bottom-16 xl:-bottom-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="71" height="33" viewBox="0 0 71 33" fill="none">
+                            <path d="M68.8023 1.65682C68.8023 1.65682 38.9634 25.087 13.3149 28.6799C-12.3337 32.2729 -30.9987 27.9752 -30.9987 27.9752" stroke="url(#paint0_linear_2994_1955)" stroke-width="4"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_2994_1955" x1="13.7811" y1="-0.568842" x2="41.7894" y2="31.2804" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E6C798"/>
+                                    <stop offset="0.265" stop-color="#ECAE52"/>
+                                    <stop offset="1" stop-color="#E16C00"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
+            <div class="absolute left-1/2 -translate-x-1/2 bottom-[-180px] lg:bottom-[-185px] w-full">
+                <p class="text-center text-medium-h5 lg:text-medium-h4 font-medium-yekanbakh">پکیج‌های آموزشی</p>
+                <p class="text-center  text-heavy-h3 font-heavy-yekanbakh text-[#6530ED]">تخفیف ویژه</p>
+            </div>
         </section>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section
+            class="w-full relative drop-shadow-box-shadow bg-[url(../images/dependencies/package-middle-bg-slider.jpg)] bg-top bg-cover">
+        <div class="mask-section-class-book h-[400px] w-full bottom-[-80px] left-0 right-0 -z-10 absolute bg-white"></div>
+        <section class="container pt-16 pb-8 lg:pt-36 lg:pb-16 relative">
+            <div class="swiper package-product-slider p-4">
+                <div class="swiper-wrapper p-8">
+                    <div class="swiper-slide w-[244px] h-auto child:h-full">
+                        <div class="flex flex-col bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                            <div class="orange-package-label w-[75px] h-10 -right-[37.5px] -top-[20px] absolute rounded-xl font-medium text-[13px] text-white flex items-center justify-center transition"><span class="mt-1 font-semibold text-heavy-h5 font-heavy-yekanbakh">HCP</span></div>
+                            <a href="#" class="block mt-6 px-4 text-heavy-h6 font-heavy-yekanbakh">
+                                مجموعه دروس ریاضی
+                            </a>
+                            <ul class="orange-package-disc child:relative child:line-clamp-1 child:text-[15px] font-bold-yekanbakh font-bold text-[#4D5656] px-4 mb-4">
+                                <li>ریاضی عمومی یک و دو</li>
+                            </ul>
+                            <div class="flex flex-col mt-auto items-end ml-[70px] mb-2">
+                                <div class="-mb-2">
+                                    <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">7,500,000</del>
+                                    <span class="text-heavy-s1 font-heavy-yekanbakh leading-none text-neutral-600">تومان</span>
+                                </div>
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                            </div>
+                            <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                                 style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                                <a href="#">
+                                    <svg class="w-8 h-8 fill-green-600 stroke-green-600">
+                                        <use href="#mavad-product-cart-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[244px] h-auto child:h-full">
+                        <div class="flex flex-col bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                            <div class="orange-package-label w-[75px] h-10 -right-[37.5px] -top-[20px] absolute rounded-xl font-medium text-[13px] text-white flex items-center justify-center transition"><span class="mt-1 font-semibold text-heavy-h5 font-heavy-yekanbakh">HCP</span></div>
+                            <a href="#" class="block mt-6 px-4 text-heavy-h6 font-heavy-yekanbakh">
+                                مجموعه دروس ریاضی
+                            </a>
+                            <ul class="orange-package-disc child:relative child:line-clamp-1 child:text-[15px] font-bold-yekanbakh font-bold text-[#4D5656] px-4 mb-4">
+                                <li>ریاضی عمومی یک و دو</li>
+                            </ul>
+                            <div class="flex flex-col mt-auto items-end ml-[70px] mb-2">
+                                <div class="-mb-2">
+                                    <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">7,500,000</del>
+                                    <span class="text-heavy-s1 font-heavy-yekanbakh leading-none text-neutral-600">تومان</span>
+                                </div>
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                            </div>
+                            <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                                 style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                                <a href="#">
+                                    <svg class="w-8 h-8 fill-green-600 stroke-green-600">
+                                        <use href="#mavad-product-cart-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[244px] h-auto child:h-full">
+                        <div class="flex flex-col bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                            <div class="orange-package-label w-[75px] h-10 -right-[37.5px] -top-[20px] absolute rounded-xl font-medium text-[13px] text-white flex items-center justify-center transition"><span class="mt-1 font-semibold text-heavy-h5 font-heavy-yekanbakh">HCP</span></div>
+                            <a href="#" class="block mt-6 px-4 text-heavy-h6 font-heavy-yekanbakh">
+                                مجموعه دروس ریاضی
+                            </a>
+                            <ul class="orange-package-disc child:relative child:line-clamp-1 child:text-[15px] font-bold-yekanbakh font-bold text-[#4D5656] px-4 mb-4">
+                                <li>ریاضی عمومی یک و دو</li>
+                            </ul>
+                            <div class="flex flex-col mt-auto items-end ml-[70px] mb-2">
+                                <div class="-mb-2">
+                                    <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">7,500,000</del>
+                                    <span class="text-heavy-s1 font-heavy-yekanbakh leading-none text-neutral-600">تومان</span>
+                                </div>
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                            </div>
+                            <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                                 style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                                <a href="#">
+                                    <svg class="w-8 h-8 fill-green-600 stroke-green-600">
+                                        <use href="#mavad-product-cart-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[244px] h-auto child:h-full">
+                        <div class="flex flex-col bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                            <div class="orange-package-label w-[75px] h-10 -right-[37.5px] -top-[20px] absolute rounded-xl font-medium text-[13px] text-white flex items-center justify-center transition"><span class="mt-1 font-semibold text-heavy-h5 font-heavy-yekanbakh">HCP</span></div>
+                            <a href="#" class="block mt-6 px-4 text-heavy-h6 font-heavy-yekanbakh">
+                                مجموعه دروس ریاضی
+                            </a>
+                            <ul class="orange-package-disc child:relative child:line-clamp-1 child:text-[15px] font-bold-yekanbakh font-bold text-[#4D5656] px-4 mb-4">
+                                <li>ریاضی عمومی یک و دو</li>
+                            </ul>
+                            <div class="flex flex-col mt-auto items-end ml-[70px] mb-2">
+                                <div class="-mb-2">
+                                    <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">7,500,000</del>
+                                    <span class="text-heavy-s1 font-heavy-yekanbakh leading-none text-neutral-600">تومان</span>
+                                </div>
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                            </div>
+                            <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                                 style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                                <a href="#">
+                                    <svg class="w-8 h-8 fill-green-600 stroke-green-600">
+                                        <use href="#mavad-product-cart-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[244px] h-auto child:h-full">
+                        <div class="flex flex-col bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                            <div class="orange-package-label w-[75px] h-10 -right-[37.5px] -top-[20px] absolute rounded-xl font-medium text-[13px] text-white flex items-center justify-center transition"><span class="mt-1 font-semibold text-heavy-h5 font-heavy-yekanbakh">HCP</span></div>
+                            <a href="#" class="block mt-6 px-4 text-heavy-h6 font-heavy-yekanbakh">
+                                مجموعه دروس ریاضی
+                            </a>
+                            <ul class="orange-package-disc child:relative child:line-clamp-1 child:text-[15px] font-bold-yekanbakh font-bold text-[#4D5656] px-4 mb-4">
+                                <li>ریاضی عمومی یک و دو</li>
+                            </ul>
+                            <div class="flex flex-col mt-auto items-end ml-[70px] mb-2">
+                                <div class="-mb-2">
+                                    <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">7,500,000</del>
+                                    <span class="text-heavy-s1 font-heavy-yekanbakh leading-none text-neutral-600">تومان</span>
+                                </div>
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                            </div>
+                            <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                                 style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                                <a href="#">
+                                    <svg class="w-8 h-8 fill-green-600 stroke-green-600">
+                                        <use href="#mavad-product-cart-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-72 bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                        <div class="w-8 h-8 -right-2 -top-2 absolute bg-orange-500 rounded-full shadow-[0px_2px_9px_0px_rgb(255,109,1,.4)] font-medium text-[13px] text-white flex items-center justify-center transition">
+                            <span class="mt-1 font-semibold">20</span><span
+                                class="mt-1.5 text-[10px] mr-0.5">%</span></div>
+                        <div class="flex flex-col w-full pt-3 md:pt-5 md:px-5">
+                            <figure class="text-center relative">
+                                <a href="#" class="inline-block mx-auto">
+                                    <img class="w-60 md:group-hover:w-30 rounded-xl transition-all"
+                                         src="assets/images/product/class.jpg" alt=""/>
+                                    <svg class="w-14 h-14 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                                        <use href="#mavad-class-play-icon"></use>
+                                    </svg>
+                                </a>
+                            </figure>
+                            <h2 class="text-right leading-relaxed text-heavy-b1 font-heavy-yekanbakh text-body-text-color md:group-hover:text-[#112672] transform px-3">
+                                <a href="#" class="line-clamp-2">دوره جمع بندی کنکور ارشد مهندسی مواد و
+                                    متالورژی</a></h2>
+                            <div class="flex justify-between items-start px-3">
+                                <div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-lecture-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">استاد صفرپور</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-ticket-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">245</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <svg class="w-3 h-3 stroke-[#4D5656]">
+                                        <use href="#mavad-class-time-icon"></use>
+                                    </svg>
+                                    <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">120 ساعت</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-start px-5 my-2 font-black whitespace-nowrap">
+                            <div class="flex items-center gap-x-1.5">
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                                <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">
+                                    7,500,000
+                                </del>
+                            </div>
+                            <span class="text-heavy-s1 font-heavy-yekanbakh text-neutral-600">تومان</span>
+                        </div>
+                        <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                             style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                            <a href="#">
+                                <svg class="w-8 h-8">
+                                    <use href="#mavad-product-cart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-72 bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                        <div class="w-8 h-8 -right-2 -top-2 absolute bg-orange-500 rounded-full shadow-[0px_2px_9px_0px_rgb(255,109,1,.4)] font-medium text-[13px] text-white flex items-center justify-center transition">
+                            <span class="mt-1 font-semibold">20</span><span
+                                class="mt-1.5 text-[10px] mr-0.5">%</span></div>
+                        <div class="flex flex-col w-full pt-3 md:pt-5 md:px-5">
+                            <figure class="text-center relative">
+                                <a href="#" class="inline-block mx-auto">
+                                    <img class="w-60 md:group-hover:w-30 rounded-xl transition-all"
+                                         src="assets/images/product/class.jpg" alt=""/>
+                                    <svg class="w-14 h-14 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                                        <use href="#mavad-class-play-icon"></use>
+                                    </svg>
+                                </a>
+                            </figure>
+                            <h2 class="text-right leading-relaxed text-heavy-b1 font-heavy-yekanbakh text-body-text-color md:group-hover:text-[#112672] transform px-3">
+                                <a href="#" class="line-clamp-2">دوره جمع بندی کنکور ارشد مهندسی مواد و
+                                    متالورژی</a></h2>
+                            <div class="flex justify-between items-start px-3">
+                                <div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-lecture-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">استاد صفرپور</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-ticket-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">245</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <svg class="w-3 h-3 stroke-[#4D5656]">
+                                        <use href="#mavad-class-time-icon"></use>
+                                    </svg>
+                                    <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">120 ساعت</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-start px-5 my-2 font-black whitespace-nowrap">
+                            <div class="flex items-center gap-x-1.5">
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                                <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">
+                                    7,500,000
+                                </del>
+                            </div>
+                            <span class="text-heavy-s1 font-heavy-yekanbakh text-neutral-600">تومان</span>
+                        </div>
+                        <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                             style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                            <a href="#">
+                                <svg class="w-8 h-8">
+                                    <use href="#mavad-product-cart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-72 bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                        <div class="w-8 h-8 -right-2 -top-2 absolute bg-orange-500 rounded-full shadow-[0px_2px_9px_0px_rgb(255,109,1,.4)] font-medium text-[13px] text-white flex items-center justify-center transition">
+                            <span class="mt-1 font-semibold">20</span><span
+                                class="mt-1.5 text-[10px] mr-0.5">%</span></div>
+                        <div class="flex flex-col w-full pt-3 md:pt-5 md:px-5">
+                            <figure class="text-center relative">
+                                <a href="#" class="inline-block mx-auto">
+                                    <img class="w-60 md:group-hover:w-30 rounded-xl transition-all"
+                                         src="assets/images/product/class.jpg" alt=""/>
+                                    <svg class="w-14 h-14 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                                        <use href="#mavad-class-play-icon"></use>
+                                    </svg>
+                                </a>
+                            </figure>
+                            <h2 class="text-right leading-relaxed text-heavy-b1 font-heavy-yekanbakh text-body-text-color md:group-hover:text-[#112672] transform px-3">
+                                <a href="#" class="line-clamp-2">دوره جمع بندی کنکور ارشد مهندسی مواد و
+                                    متالورژی</a></h2>
+                            <div class="flex justify-between items-start px-3">
+                                <div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-lecture-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">استاد صفرپور</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-ticket-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">245</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <svg class="w-3 h-3 stroke-[#4D5656]">
+                                        <use href="#mavad-class-time-icon"></use>
+                                    </svg>
+                                    <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">120 ساعت</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-start px-5 my-2 font-black whitespace-nowrap">
+                            <div class="flex items-center gap-x-1.5">
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                                <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">
+                                    7,500,000
+                                </del>
+                            </div>
+                            <span class="text-heavy-s1 font-heavy-yekanbakh text-neutral-600">تومان</span>
+                        </div>
+                        <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                             style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                            <a href="#">
+                                <svg class="w-8 h-8">
+                                    <use href="#mavad-product-cart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-72 bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                        <div class="w-8 h-8 -right-2 -top-2 absolute bg-orange-500 rounded-full shadow-[0px_2px_9px_0px_rgb(255,109,1,.4)] font-medium text-[13px] text-white flex items-center justify-center transition">
+                            <span class="mt-1 font-semibold">20</span><span
+                                class="mt-1.5 text-[10px] mr-0.5">%</span></div>
+                        <div class="flex flex-col w-full pt-3 md:pt-5 md:px-5">
+                            <figure class="text-center relative">
+                                <a href="#" class="inline-block mx-auto">
+                                    <img class="w-60 md:group-hover:w-30 rounded-xl transition-all"
+                                         src="assets/images/product/class.jpg" alt=""/>
+                                    <svg class="w-14 h-14 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                                        <use href="#mavad-class-play-icon"></use>
+                                    </svg>
+                                </a>
+                            </figure>
+                            <h2 class="text-right leading-relaxed text-heavy-b1 font-heavy-yekanbakh text-body-text-color md:group-hover:text-[#112672] transform px-3">
+                                <a href="#" class="line-clamp-2">دوره جمع بندی کنکور ارشد مهندسی مواد و
+                                    متالورژی</a></h2>
+                            <div class="flex justify-between items-start px-3">
+                                <div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-lecture-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">استاد صفرپور</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-ticket-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">245</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <svg class="w-3 h-3 stroke-[#4D5656]">
+                                        <use href="#mavad-class-time-icon"></use>
+                                    </svg>
+                                    <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">120 ساعت</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-start px-5 my-2 font-black whitespace-nowrap">
+                            <div class="flex items-center gap-x-1.5">
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                                <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">
+                                    7,500,000
+                                </del>
+                            </div>
+                            <span class="text-heavy-s1 font-heavy-yekanbakh text-neutral-600">تومان</span>
+                        </div>
+                        <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                             style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                            <a href="#">
+                                <svg class="w-8 h-8">
+                                    <use href="#mavad-product-cart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-72 bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                        <div class="w-8 h-8 -right-2 -top-2 absolute bg-orange-500 rounded-full shadow-[0px_2px_9px_0px_rgb(255,109,1,.4)] font-medium text-[13px] text-white flex items-center justify-center transition">
+                            <span class="mt-1 font-semibold">20</span><span
+                                class="mt-1.5 text-[10px] mr-0.5">%</span></div>
+                        <div class="flex flex-col w-full pt-3 md:pt-5 md:px-5">
+                            <figure class="text-center relative">
+                                <a href="#" class="inline-block mx-auto">
+                                    <img class="w-60 md:group-hover:w-30 rounded-xl transition-all"
+                                         src="assets/images/product/class.jpg" alt=""/>
+                                    <svg class="w-14 h-14 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                                        <use href="#mavad-class-play-icon"></use>
+                                    </svg>
+                                </a>
+                            </figure>
+                            <h2 class="text-right leading-relaxed text-heavy-b1 font-heavy-yekanbakh text-body-text-color md:group-hover:text-[#112672] transform px-3">
+                                <a href="#" class="line-clamp-2">دوره جمع بندی کنکور ارشد مهندسی مواد و
+                                    متالورژی</a></h2>
+                            <div class="flex justify-between items-start px-3">
+                                <div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-lecture-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">استاد صفرپور</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-ticket-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">245</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <svg class="w-3 h-3 stroke-[#4D5656]">
+                                        <use href="#mavad-class-time-icon"></use>
+                                    </svg>
+                                    <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">120 ساعت</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-start px-5 my-2 font-black whitespace-nowrap">
+                            <div class="flex items-center gap-x-1.5">
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                                <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">
+                                    7,500,000
+                                </del>
+                            </div>
+                            <span class="text-heavy-s1 font-heavy-yekanbakh text-neutral-600">تومان</span>
+                        </div>
+                        <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                             style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                            <a href="#">
+                                <svg class="w-8 h-8">
+                                    <use href="#mavad-product-cart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-72 bg-white border rounded-[20px] relative after:content-[''] after:right-0 after:left-0 after:-bottom-2 after:w-[80%] after:h-8 after:blur-sm after:mx-auto after:absolute after:!-z-50 after:bg-black/20">
+                        <div class="w-8 h-8 -right-2 -top-2 absolute bg-orange-500 rounded-full shadow-[0px_2px_9px_0px_rgb(255,109,1,.4)] font-medium text-[13px] text-white flex items-center justify-center transition">
+                            <span class="mt-1 font-semibold">20</span><span
+                                class="mt-1.5 text-[10px] mr-0.5">%</span></div>
+                        <div class="flex flex-col w-full pt-3 md:pt-5 md:px-5">
+                            <figure class="text-center relative">
+                                <a href="#" class="inline-block mx-auto">
+                                    <img class="w-60 md:group-hover:w-30 rounded-xl transition-all"
+                                         src="assets/images/product/class.jpg" alt=""/>
+                                    <svg class="w-14 h-14 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                                        <use href="#mavad-class-play-icon"></use>
+                                    </svg>
+                                </a>
+                            </figure>
+                            <h2 class="text-right leading-relaxed text-heavy-b1 font-heavy-yekanbakh text-body-text-color md:group-hover:text-[#112672] transform px-3">
+                                <a href="#" class="line-clamp-2">دوره جمع بندی کنکور ارشد مهندسی مواد و
+                                    متالورژی</a></h2>
+                            <div class="flex justify-between items-start px-3">
+                                <div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-lecture-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">استاد صفرپور</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-2">
+                                        <svg class="w-3 h-3 text-[#4D5656]">
+                                            <use href="#mavad-ticket-icon"></use>
+                                        </svg>
+                                        <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">245</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-x-2">
+                                    <svg class="w-3 h-3 stroke-[#4D5656]">
+                                        <use href="#mavad-class-time-icon"></use>
+                                    </svg>
+                                    <span class="text-medium-c1 font-medium-yekanbakh text-indigo-950 mt-1">120 ساعت</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-start px-5 my-2 font-black whitespace-nowrap">
+                            <div class="flex items-center gap-x-1.5">
+                                <span class="text-heavy-c2 font-heavy-yekanbakh text-green-600 leading-none">7,500,000</span>
+                                <del class="text-heavy-s1 font-heavy-yekanbakh leading-none tracking-wide text-neutral-600 text-left">
+                                    7,500,000
+                                </del>
+                            </div>
+                            <span class="text-heavy-s1 font-heavy-yekanbakh text-neutral-600">تومان</span>
+                        </div>
+                        <div class="flex items-center justify-center bg-white absolute -left-px -bottom-px w-[60px] h-[48px] border-2 border-white rounded-bl-[20px] rounded-tr-[20px]"
+                             style="box-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;">
+                            <a href="#">
+                                <svg class="w-8 h-8">
+                                    <use href="#mavad-product-cart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 lg:mt-16">
+                <button id="package-product-slider-next"
+                        class="absolute top-1/2 -translate-y-1/2 right-1.5 xl:right-1 hover:scale-105 transition z-20 bg-white/50 shadow  w-8 h-8 flex items-center justify-center rounded-full">
+                    <svg class="w-4 h-4 stroke-[#6530ED]">
+                        <use href="#mavad-carousel-angle-icon"></use>
+                    </svg>
+                </button>
+                <button id="package-product-slider-prev"
+                        class="absolute top-1/2 -translate-y-1/2 left-1.5 xl:left-1 hover:scale-105 transition z-20 bg-white /50 shadow w-8 h-8 flex items-center justify-center rounded-full">
+                    <svg class="w-4 h-4 stroke-[#6530ED] rotate-180">
+                        <use href="#mavad-carousel-angle-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="container pt-6 lg:pt-12 pb-6 mt-10 relative">
+            <div class="swiper comment-carousel-slider h-52 hidden md:flex">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide my-2 min-h-fit max-h-48">
+                        <div class="flex gap-x-8 h-48">
+                            <div class="flex md:w-1/2 flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                                <header class="flex gap-x-4">
+                                    <img loading="lazy" src="assets/images/comment/01.jpg"
+                                         class="w-14 h-14 rounded-full" alt=""/>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">شهاب تصویبی</h2>
+                                        <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                            رتبه 1 کنکور سال 1396
+                                        </p>
+                                    </div>
+                                </header>
+                                <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                    دانشجوی گرایش متالوژی صنعتی دانشگاه امام خمینی قزوین بودم که به واسطه ی یکی از دوستان ترم بالایی با دکتراستاد صفرپور آشنا شدم و کلاس های پاییزه ایشون شرکت کردم،نکته ی خیلی مهم اینکه ایشون هم در کارشون مهارت دارند و هم جزوات ایشون خیلی مفید و مختصر است که مستقیما دانشجو را میبرد سراغ اصل مطلب.
+                                    و ایشون هم مشاور خوبی  هستند و هم مشاور بسیار عالی هستند.
+                                </p>
+                            </div>
+                            <div class="flex md:w-1/2 flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                                <header class="flex gap-x-4">
+                                    <img loading="lazy" src="assets/images/comment/02.jpg"
+                                         class="w-14 h-14 rounded-full" alt=""/>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">حمیدرضا صالحی</h2>
+                                        <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                            رتبه 1 کنکور مواد سال 1403
+                                        </p>
+                                    </div>
+                                </header>
+                                <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                    اگر مواد کنکور نبود من نمیتوانستم همچین رتبه ایی بیاورم!
+                                    کلاس ها واقعا بازدهی بالایی داشتند.اگر کسی هم دوره ی جمع بندی و هم کلاس ها را شرکت کند قطعا رتبه ی زیر 10 می آورد. دوره ی جمع بندی بسیااااار رضایت بخش بود و خییییلی عالی بود.و اگر کسی همراه با مواد کنکور جلو بیاید کاملا برای رتبه خوب آوردن کفایت میکند.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide my-2 min-h-fit max-h-48">
+                        <div class="flex gap-x-8 h-48">
+                            <div class="flex md:w-1/2 flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                                <header class="flex gap-x-4">
+                                    <img loading="lazy" src="assets/images/comment/03.jpg"
+                                         class="w-14 h-14 rounded-full" alt=""/>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">امیرحسین شکیبا</h2>
+                                        <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                            رتبه 2 کنکور مهندسی مواد سال 1403
+                                        </p>
+                                    </div>
+                                </header>
+                                <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                    از آنجایی که جلسات ریکورد شده بود تونستم ویدئو هارو مشاهده کنم و مجدد ببینم.جزوه هم قبل از جلسات در اختیار دانشجویان قرار می گرفت که بتوانند مروری بر مطالب جلسه بعد داشته باشند.در رابطه با آزمون ها هم از آنجایی که جلسه تحلیل آزمون داشتیم که هم سوالات حل میشد هم می توانستیم سوالاتمون رو بپرسیم.در نهایت خیلی ممنون از مجموعه مواد کنکور.
+                                </p>
+                            </div>
+                            <div class="flex md:w-1/2 flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                                <header class="flex gap-x-4">
+                                    <img loading="lazy" src="assets/images/comment/04.jpg"
+                                         class="w-14 h-14 rounded-full" alt=""/>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">امین حافظی</h2>
+                                        <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                            رتبه 3 کنکور مهندسی مواد سال 1403
+                                        </p>
+                                    </div>
+                                </header>
+                                <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                    رتبه ی خودم را مدیون مواد کنکور و دکتر صفر پور هستم و تاثیر مستقیم روی کسب رتبه داشت!
+                                    کلاس ها بسیار مفید بود و بدون اتلاف وقت تدریس میشد.و خود استاد صفرپور بی نظیر بودند.آزمون ها تایم بسیار مناسبی برگزار میشد و کلاس ها هم در تایم بسیار خوبی شروع و تمام شد.هم چنین پشتیبانی بسیار عالی داشتند که در تمامی مراحل مشکلات مارا بر طرف میکردند.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide my-2 min-h-fit max-h-48">
+                        <div class="flex gap-x-8 h-48">
+                            <div class="flex md:w-1/2 flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                                <header class="flex gap-x-4">
+                                    <img loading="lazy" src="assets/images/comment/05.jpg"
+                                         class="w-14 h-14 rounded-full" alt=""/>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">محدثه قرنی</h2>
+                                        <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                            رتبه 1 کنکور مهندسی مواد سال 1402
+                                        </p>
+                                    </div>
+                                </header>
+                                <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                    محدثه قرنی هستم، فارغ التحصیل کارشناسی از دانشگاه شریف.
+                                    به لطف خدا و کمک های استاد صفرپور عزیز و استاد عبداله زاده گرامی تونستم رتبه ۱ رو کسب کنم. موسسه مواد کنکور رو یکی از دوستانم بهم معرفی کرد. با شروع کلاسا از شهریور ماه، پا  به پای استاد صفرپور دروس تخصصی رو میخوندم. در مورد آزمون ها هم بگم که هم سطح سوالات خوب بودن و هم پاسخنامه ای که داشت کامل بود و از همه مهم تر عالی بودن کلاسای تحلیل آزمون بود که استاد صفرپور برگزار میکردن.
+                                </p>
+                            </div>
+                            <div class="flex md:w-1/2 flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                                <header class="flex gap-x-4">
+                                    <img loading="lazy" src="assets/images/comment/06.jpg"
+                                         class="w-14 h-14 rounded-full" alt=""/>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">فرزانه ابره‌دری</h2>
+                                        <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                            رتبه6 کنکور ارشد مهندسی مواد 1402
+                                        </p>
+                                    </div>
+                                </header>
+                                <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                    با تدریس کامل استاد صفرپور عزیز نه تنها نگرانی بابت دروس تخصصی نخواهید داشت بلکه با یادگیری مطالبی که داخل دانشگاه‌ها اشاره‌ای نمیشه یا کامل توضیح داده نمیشه، لذت میبرید و به نوعی دانش مهندسی مواد خودتون رو بالاتر میبرید.
+                                    در آخر به همه دوستانی که برای ثبت نام در کلاس‌های سال آینده تردید دارن می‌خوام بگم که، مطمئن باشید ارزش علمی این کلاس‌ها از ارزش مادی آن خیلییی بیشتره، شرکت کنید تا هم از درس خوندن لذت ببرید و هم سال بعد جزء کسانی باشید که تجربیاتشون رو به اشتراک میذارن.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper comment-carousel-slider h-52 md:hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex my-2 min-h-fit max-h-48">
+                        <div class="flex flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                            <header class="flex gap-x-4">
+                                <img loading="lazy" src="assets/images/comment/01.jpg"
+                                     class="w-14 h-14 rounded-full" alt=""/>
+                                <div class="flex flex-col">
+                                    <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">شهاب تصویبی</h2>
+                                    <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                        رتبه 1 کنکور سال 1396
+                                    </p>
+                                </div>
+                            </header>
+                            <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                دانشجوی گرایش متالوژی صنعتی دانشگاه امام خمینی قزوین بودم که به واسطه ی یکی از دوستان ترم بالایی با دکتراستاد صفرپور آشنا شدم و کلاس های پاییزه ایشون شرکت کردم،نکته ی خیلی مهم اینکه ایشون هم در کارشون مهارت دارند و هم جزوات ایشون خیلی مفید و مختصر است که مستقیما دانشجو را میبرد سراغ اصل مطلب.
+                                و ایشون هم مشاور خوبی  هستند و هم مشاور بسیار عالی هستند.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex my-2 min-h-fit max-h-48">
+                        <div class="flex flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                            <header class="flex gap-x-4">
+                                <img loading="lazy" src="assets/images/comment/02.jpg"
+                                     class="w-14 h-14 rounded-full" alt=""/>
+                                <div class="flex flex-col">
+                                    <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">حمیدرضا صالحی</h2>
+                                    <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                        رتبه 1 کنکور مواد سال 1403
+                                    </p>
+                                </div>
+                            </header>
+                            <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                اگر مواد کنکور نبود من نمیتوانستم همچین رتبه ایی بیاورم!
+                                کلاس ها واقعا بازدهی بالایی داشتند.اگر کسی هم دوره ی جمع بندی و هم کلاس ها را شرکت کند قطعا رتبه ی زیر 10 می آورد. دوره ی جمع بندی بسیااااار رضایت بخش بود و خییییلی عالی بود.و اگر کسی همراه با مواد کنکور جلو بیاید کاملا برای رتبه خوب آوردن کفایت میکند.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex my-2 min-h-fit max-h-48">
+                        <div class="flex flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                            <header class="flex gap-x-4">
+                                <img loading="lazy" src="assets/images/comment/03.jpg"
+                                     class="w-14 h-14 rounded-full" alt=""/>
+                                <div class="flex flex-col">
+                                    <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">امیرحسین شکیبا</h2>
+                                    <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                        رتبه 2 کنکور مهندسی مواد سال 1403
+                                    </p>
+                                </div>
+                            </header>
+                            <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                از آنجایی که جلسات ریکورد شده بود تونستم ویدئو هارو مشاهده کنم و مجدد ببینم.جزوه هم قبل از جلسات در اختیار دانشجویان قرار می گرفت که بتوانند مروری بر مطالب جلسه بعد داشته باشند.در رابطه با آزمون ها هم از آنجایی که جلسه تحلیل آزمون داشتیم که هم سوالات حل میشد هم می توانستیم سوالاتمون رو بپرسیم.در نهایت خیلی ممنون از مجموعه مواد کنکور.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex my-2 min-h-fit max-h-48">
+                        <div class="flex flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                            <header class="flex gap-x-4">
+                                <img loading="lazy" src="assets/images/comment/04.jpg"
+                                     class="w-14 h-14 rounded-full" alt=""/>
+                                <div class="flex flex-col">
+                                    <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">امین حافظی</h2>
+                                    <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                        رتبه 3 کنکور مهندسی مواد سال 1403
+                                    </p>
+                                </div>
+                            </header>
+                            <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                رتبه ی خودم را مدیون مواد کنکور و دکتر صفر پور هستم و تاثیر مستقیم روی کسب رتبه داشت!
+                                کلاس ها بسیار مفید بود و بدون اتلاف وقت تدریس میشد.و خود استاد صفرپور بی نظیر بودند.آزمون ها تایم بسیار مناسبی برگزار میشد و کلاس ها هم در تایم بسیار خوبی شروع و تمام شد.هم چنین پشتیبانی بسیار عالی داشتند که در تمامی مراحل مشکلات مارا بر طرف میکردند.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex my-2 min-h-fit max-h-48">
+                        <div class="flex flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                            <header class="flex gap-x-4">
+                                <img loading="lazy" src="assets/images/comment/05.jpg"
+                                     class="w-14 h-14 rounded-full" alt=""/>
+                                <div class="flex flex-col">
+                                    <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">محدثه قرنی</h2>
+                                    <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                        رتبه 1 کنکور مهندسی مواد سال 1402
+                                    </p>
+                                </div>
+                            </header>
+                            <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                محدثه قرنی هستم، فارغ التحصیل کارشناسی از دانشگاه شریف.
+                                به لطف خدا و کمک های استاد صفرپور عزیز و استاد عبداله زاده گرامی تونستم رتبه ۱ رو کسب کنم. موسسه مواد کنکور رو یکی از دوستانم بهم معرفی کرد. با شروع کلاسا از شهریور ماه، پا  به پای استاد صفرپور دروس تخصصی رو میخوندم. در مورد آزمون ها هم بگم که هم سطح سوالات خوب بودن و هم پاسخنامه ای که داشت کامل بود و از همه مهم تر عالی بودن کلاسای تحلیل آزمون بود که استاد صفرپور برگزار میکردن.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex my-2 min-h-fit max-h-48">
+                        <div class="flex flex-col px-6 py-5 bg-white rounded-3xl border border-zinc-300">
+                            <header class="flex gap-x-4">
+                                <img loading="lazy" src="assets/images/comment/06.jpg"
+                                     class="w-14 h-14 rounded-full" alt=""/>
+                                <div class="flex flex-col">
+                                    <h2 class="text-bold-b2 font-bold-yekanbakh text-body-text-color">فرزانه ابره‌دری</h2>
+                                    <p class="text-medium-c1 font-medium-yekanbakh text-[#5B5B5B] -mt-1.5">
+                                        رتبه6 کنکور ارشد مهندسی مواد 1402
+                                    </p>
+                                </div>
+                            </header>
+                            <p class="mt-4 line-clamp-3 text-medium-b3 font-medium-yekanbakh text-body-text-color">
+                                با تدریس کامل استاد صفرپور عزیز نه تنها نگرانی بابت دروس تخصصی نخواهید داشت بلکه با یادگیری مطالبی که داخل دانشگاه‌ها اشاره‌ای نمیشه یا کامل توضیح داده نمیشه، لذت میبرید و به نوعی دانش مهندسی مواد خودتون رو بالاتر میبرید.
+                                در آخر به همه دوستانی که برای ثبت نام در کلاس‌های سال آینده تردید دارن می‌خوام بگم که، مطمئن باشید ارزش علمی این کلاس‌ها از ارزش مادی آن خیلییی بیشتره، شرکت کنید تا هم از درس خوندن لذت ببرید و هم سال بعد جزء کسانی باشید که تجربیاتشون رو به اشتراک میذارن.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="comment-carousel-slider-next"
+                        class="absolute -top-5  left-1/2 -translate-x-1/2 hover:scale-105 transition z-20">
+                    <svg class="w-4 h-4 stroke-[#6530ED] -rotate-90">
+                        <use href="#mavad-carousel-angle-icon"></use>
+                    </svg>
+                </button>
+                <button id="comment-carousel-slider-prev"
+                        class="absolute -bottom-10 left-1/2 -translate-x-1/2 hover:scale-105 transition z-20">
+                    <svg class="w-4 h-4 stroke-[#6530ED] rotate-90">
+                        <use href="#mavad-carousel-angle-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </section>
+    <section>
+        <div>
+            <section class="my-16 mx-4">
+                <div class="text-center relative mt-36 text-heavy-h4 lg:text-heavy-h3 font-heavy-yekanbakh mb-10">
+                    معرفی پکیج‌ها
+                </div>
+                <section class="space-y-12">
+                    <article class="md:container flex justify-between items-stretch">
+                        <div class="hidden lg:block lg:w-[150px] xl:w-[150px] blur-sm flex-shrink-0 rounded-2xl ml-4" style="background:linear-gradient(270deg, rgba(255, 255, 255, 0)
+ 0%, rgba(237, 237, 237, 0.5) 100%);"></div>
+                        <div class="text-center">
+                            <div style="max-width: 910px; margin: 0px 20px; border-radius: 20px; background: #fff;box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);">
+                                <div class="flex justify-between gap-x-4 question-btn" data-target-content="content-2"
+                                     data-question-btn="title-btn-2"
+                                     style="padding: 20px 30px; align-items: start; cursor: pointer">
+                                    <div class="font-bold" style="line-height: 32px; text-align: right">
+                                        <div class="flex items-center gap-x-4 text-heavy-h6 font-heavy-yekanbakh">
+                                            <span class="blue-package-label block w-[75px] h-[40px] text-heavy-h5 font-heavy-yekanbakh text-white text-center content-center rounded-xl">FCC</span>
+                                            کلاس آنالیز و شناسایی مواد کنکور دکتری چیست؟
+                                        </div>
+                                    </div>
+                                    <button id="title-btn-2"
+                                            style="margin-top: 10px; transition: transform 0.5s ease-in-out">
+                                        <svg class="w-4 h-4 stroke-[#6530ED] rotate-90"><use href="#mavad-carousel-angle-icon"></use></svg>
+                                    </button>
+                                </div>
+                                <div class="answer-content" id="content-2"
+                                     style="height: 0px; overflow-y: hidden; transition: all .3s ease-in-out">
+                                    <div class="py-2.5 px-8">
+                                        <h2 class="text-heavy-h5 font-heavy-yekanbakh text-right pr-6 relative blue-package-info">مجموعه دروس تخصصی (FCC)</h2>
+                                        <p class="text-right">
+                                            این پکیج شامل دروس تخصصی مهندسی مواد است که با تدریس اساتید مجرب و محتوای دقیق و کامل، به شما کمک می‌کند تا به بهترین شکل ممکن برای کنکور آماده شوید.
+                                        </p>
+                                        <ul class="text-right space-y-4">
+                                            <li class="flex flex-wrap md:flex-nowrap gap-x-1.5">
+                                                <svg class="w-4 h-4 blue-replay mt-2 ml-4"><use href="#mavad-replay-icon"></use></svg>
+                                                <strong class="text-nowrap">ریاضی عمومی یک و دو:</strong>
+                                                <p class="text-[#4D5656] w-full md:w-fit">
+                                                    ین پکیج شامل دروس تخصصی مهندسی مواد است که با تدریس اساتید مجرب و محتوای دقیق و کامل، به شما کمک
+                                                </p>
+                                            </li>
+                                            <li class="flex gap-x-1.5">
+                                                <svg class="w-4 h-4 blue-replay mt-2 ml-4"><use href="#mavad-replay-icon"></use></svg>
+                                                <strong class="text-nowrap">ریاضی عمومی یک و دو:</strong>
+                                                <p class="text-[#4D5656]">
+                                                    ین پکیج شامل دروس تخصصی مهندسی مواد است که با تدریس اساتید مجرب و محتوای دقیق و کامل، به شما کمک
+                                                </p>
+                                            </li>
+                                            <li class="flex gap-x-1.5">
+                                                <svg class="w-4 h-4 blue-replay mt-2 ml-4"><use href="#mavad-replay-icon"></use></svg>
+                                                <strong class="text-nowrap">ریاضی عمومی یک و دو:</strong>
+                                                <p class="text-[#4D5656]">
+                                                    ین پکیج شامل دروس تخصصی مهندسی مواد است که با تدریس اساتید مجرب و محتوای دقیق و کامل، به شما کمک
+                                                </p>
+                                            </li>
+                                            <li class="flex gap-x-1.5">
+                                                <svg class="w-4 h-4 blue-replay mt-2 ml-4"><use href="#mavad-replay-icon"></use></svg>
+                                                <strong class="text-nowrap">ریاضی عمومی یک و دو:</strong>
+                                                <p class="text-[#4D5656]">
+                                                    ین پکیج شامل دروس تخصصی مهندسی مواد است که با تدریس اساتید مجرب و محتوای دقیق و کامل، به شما کمک
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block lg:w-[150px] xl:w-[150px] blur-sm flex-shrink-0 rounded-2xl mr-4" style="background:linear-gradient(270deg, rgba(237, 237, 237, 0.5)
+ 0%, rgba(255, 255, 255, 0) 100%);"></div>
+                    </article>
+                </section>
+            </section>
+        </div>
+    </section>
+    <section class="container">
+        <div class="flex gap-5 p-4 lg:p-8 bg-white border border-solid border-zinc-300 rounded-[30px] max-md:flex-col">
+            <div class="flex flex-col order-2 ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                <div class="flex flex-col justify-center gap-y-2.5 lg:gap-y-5 h-full">
+                    <h2 class="text-heavy-h4 md:text-heavy-h3 text-center md:text-right font-heavy-yekanbakh text-gradient-1">
+                        مشاوره رایگان <br /> کنکور مهندسی مواد
+                    </h2>
+                    <p class="self-stretch mt-5 text-xl text-justify font-bold leading-10 text-indigo-950 max-md:max-w-full">
+                        آیا برای موفقیت در کنکور مهندسی مواد به راهنمایی نیاز دارید؟ <br /> با مشاوره رایگان ما، بهترین مسیر را برای دستابی به رتبه برتر پیدا کنید.
+                    </p>
+                    <a href="#" class="gap-2.5 block w-fit mx-auto md:mx-0 self-stretch py-2 px-12 mt-4 text-heavy-h5 font-heavy-yekanbakh leading-loose text-center text-white bg-orange-500 hover:bg-orange-600 transition rounded-xl w-[269px]" role="button" tabindex="0">
+                        درخواست مشاوره
+                    </a>
+                </div>
+            </div>
+            <figure class="order-1 md:order-2">
+                <img src="./assets/images/showcase-adv/package-consultation-request.avif" alt="" class="rounded-3xl">
+            </figure>
+        </div>
+    </section>
+    <section class="container my-16">
+        <div class="text-center relative mb-10">
+            <p class="max-w-fit text-bold-b2 font-bold-yekanbakh text-center mx-auto bg-white px-6">
+                پرسش و پاسخ
+            </p>
+            <hr class="absolute top-5 w-full h-0.5 -z-10">
+        </div>
+        <div class="my-8 text-center">
+            <div style="max-width: 910px; margin: 20px auto; border-radius: 20px; background: #fff;box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);">
+                <div class="flex justify-between gap-x-4 question-btn" data-target-content="answer-1"
+                     data-question-btn="question-btn-1"
+                     style="padding: 20px 30px; align-items: start; cursor: pointer">
+                    <div class="font-bold" style="line-height: 32px; text-align: right">
+                        کلاس آنالیز و شناسایی مواد کنکور دکتری چیست؟
+                    </div>
+                    <button id="question-btn-1"
+                            style="margin-top: 10px; transition: transform 0.5s ease-in-out">
+                        <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_815_360)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11 2.5C11 1.11929 9.88071 0 8.5 0C7.11929 0 6 1.11929 6 2.5V6H2.5C1.11929 6 0 7.11929 0 8.5C0 9.88071 1.11929 11 2.5 11H6V14.5C6 15.8807 7.11929 17 8.5 17C9.88071 17 11 15.8807 11 14.5V11H14.5C15.8807 11 17 9.88071 17 8.5C17 7.11929 15.8807 6 14.5 6H11V2.5Z"
+                                      fill="#6530ED"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_815_360" x="0" y="0" width="17" height="19"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                   result="hardAlpha"/>
+                                    <feOffset dy="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix"
+                                                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.29 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                             result="effect1_dropShadow_815_360"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_815_360"
+                                             result="shape"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <div class="answer-content" id="answer-1"
+                     style="height: 0px; overflow-y: hidden; transition: all .3s ease-in-out">
+                    <p class="py-2.5 px-8 text-right leading-10">
+                        فرم درخواست مشاوره را پر کنید اطلاعات خود را وارد کنید تا مشاوران
+                        ما بتوانند با شما تماس بگیرند. منتظر تماس مشاوران ما باشید مشاوران
+                        ما در کوتاه ترین زمان با شما تماس خواهند گرفت و راهنمایی‌های لازم
+                        را ارائه خواهند داد.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <!--Footer Start-->
 <footer class="w-full relative drop-shadow-box-shadow bg-[#2C273F] mt-20">
