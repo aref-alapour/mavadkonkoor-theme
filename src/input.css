@@ -525,64 +525,91 @@ p.login-form-error {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* WC Custom */
-div#customer_details {
+form.checkout.woocommerce-checkout > #customer_details > .col-2 {
     display: none;
 }
 
-h3#order_review_heading {
-    display: none;
+form.checkout.woocommerce-checkout > #customer_details > .col-1 {
+    border-radius: 30px;
+    border: 1px solid #DADADA;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    padding:16px;
+    margin-bottom:30px;
 }
-
-.woocommerce-checkout-review-order > div#payment {
+form.checkout.woocommerce-checkout > #customer_details > .col-1 h3{
+    color: #0A184A;
+    text-align: right;
+    font-family: "Yekan Bakh FaNum";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+form.checkout.woocommerce-checkout > #customer_details > .col-1 label {
+    color: #0A184A;
+    text-align: right;
+    font-family: "Yekan Bakh FaNum";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
+form.checkout.woocommerce-checkout > #customer_details > .col-1 input {
+    border-radius: 10px;
+    border: 1px solid #DADADA;
+    background: #F6F6F6;
+    padding: 5px 10px;
+}
+form.checkout.woocommerce-checkout > #order_review_heading {
+    color: #0A184A;
+    text-align: right;
+    font-family: "Yekan Bakh FaNum";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 20px;
+    margin-top:50px
+}
+form.checkout.woocommerce-checkout > .woocommerce-checkout-review-order {
+    border-radius: 30px;
+    border: 1px solid #DADADA;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    padding:16px;
+    margin-bottom:30px;
+}
+form.checkout.woocommerce-checkout > .woocommerce-checkout-review-order .woocommerce-checkout-payment {
     background: unset;
 }
 
-.woocommerce-checkout-review-order > div#payment ul.wc_payment_methods.payment_methods.methods li label {
+div#payment {
+    background: unset !important;
+}
+form.checkout.woocommerce-checkout .wc_payment_methods label {
     display: flex;
-    align-items: center;
     direction: ltr;
-    width: fit-content;
+    width:fit-content;
+    gap: 10px
 }
-
-.woocommerce-checkout-review-order > div#payment ul.wc_payment_methods.payment_methods.methods li label > img {
-    width: 20px;
-    height: 20px;
-    order: 1;
-    margin-left: 10px;
-    margin-right: 0px;
+form.checkout.woocommerce-checkout .wc_payment_methods img{
+    width:30px;
+    margin-left:20px;
+    margin-right: 0;
 }
-
-.payment_box.payment_method_WC_ZPal {
-    display: none !important;
-}
-#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
-    display: none !important;
-}
-
-#add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
-    padding: unset;
-    border: unset;
-}
-
-ul.wc_payment_methods.payment_methods.methods {}
-
-#add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
-    border-bottom: unset;
-}
-
-.woocommerce-privacy-policy-text > p {
-    display: none;
-}
-
-.woocommerce-terms-and-conditions-wrapper > button[type="submit"] {
+form.checkout.woocommerce-checkout button[type="submit"] {
+    float: unset !important;
     width: 100%;
-}
-
-.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
-    float: unset;
-    width: 100%;
-    background: #FF6D01;
+    padding: 15px;
     border-radius: 10px;
-    padding: 16px;
+    background: #FF6D01;
+    transition: all .5s ease;
+}
+form.checkout.woocommerce-checkout button[type="submit"]:hover {
+    background: #e66200;
 }
