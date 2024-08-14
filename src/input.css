@@ -519,6 +519,15 @@ p.login-form-error {
     right: 0;
     border-radius: 100%;
 }
+main.content h2{
+    @apply text-heavy-h5 font-heavy-yekanbakh;
+}
+main.content h3{
+    @apply text-heavy-h6 font-heavy-yekanbakh;
+}
+main.content h3{
+    @apply text-heavy-b1 font-heavy-yekanbakh;
+}
 .text-gradient-1{
     background: linear-gradient(288deg, #0A184A 42.14%, #4258A6 75.62%);
     background-clip: text;
