@@ -634,3 +634,49 @@ form.checkout.woocommerce-checkout button[type="submit"] {
 form.checkout.woocommerce-checkout button[type="submit"]:hover {
     background: #e66200;
 }
+#counsoling-page-form #gform_wrapper_2 form div#gform_fields_2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#counsoling-page-form #gform_wrapper_2 form div#gform_fields_2 .gfield {
+    width: 100%;
+}
+
+#counsoling-page-form #gform_wrapper_2 form div#gform_fields_2 .gfield input {
+    width: 100%;
+    border-radius: 10px;
+    border: unset;
+}
+#counsoling-page-form #gform_wrapper_2 form div#gform_fields_2 .gfield input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+#counsoling-page-form #gform_wrapper_2 form .gform_footer {
+    width: 100%;
+}
+#counsoling-page-form #gform_wrapper_2 form .gform_footer input[type="submit"] {
+    background: #FF6D01;
+    border-radius: 10px;
+    border: unset;
+    width:100%;
+    transition: all 0.3s ease;
+}
+#counsoling-page-form #gform_wrapper_2 form .gform_footer input[type="submit"]:hover {
+    background: #d75c00;
+}
+@media screen and (min-width:768px){
+    #counsoling-page-form #gform_wrapper_2 form div#gform_fields_2 {
+        flex-direction: row;
+    }
+    #counsoling-page-form #gform_wrapper_2 form .gform_footer {
+        width: 100%;
+        justify-content: end;
+        align-items: end;
+    }
+    #counsoling-page-form #gform_wrapper_2 form .gform_footer input[type="submit"] {
+        width:fit-content;
+    }
+}
