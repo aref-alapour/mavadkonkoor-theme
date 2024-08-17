@@ -192,3 +192,34 @@ $('#videoContainerCloseIcon').click(function (){
     $('#videoIframe').attr('src','');
     $('#videoIframe').attr('name','');
 })
+$('#installments-request').click(function (){
+    $("#overlay").show().animate({scale:'1'},300);
+    $("#installments-request-modal").show()
+    $("#installments-request-modal").removeClass('translate-y-20')
+    $("#installments-request-modal").removeClass('opacity-0')
+    $("#installments-request-modal").removeClass('invisible')
+    $("#installments-request-modal").addClass('-translate-y-1/2')
+
+})
+$('#installments-request-modal-close').click(function (){
+    $("#overlay").animate({scale: 0}, 300, function(){$(this).hide();});
+    $("#installments-request-modal").addClass('translate-y-20')
+    $("#installments-request-modal").addClass('opacity-0')
+    $("#installments-request-modal").removeClass('-translate-y-1/2')
+    setTimeout(function() {
+        $("#installments-request-modal").addClass('invisible')
+        $("#installments-request-modal").hide()
+    }, 300);
+
+})
+$('#overlay').click(function (){
+    $("#overlay").animate({scale: 0}, 300, function(){$(this).hide();});
+    $("#installments-request-modal").addClass('translate-y-20')
+    $("#installments-request-modal").addClass('opacity-0')
+    $("#installments-request-modal").removeClass('-translate-y-1/2')
+    setTimeout(function() {
+        $("#installments-request-modal").addClass('invisible')
+        $("#installments-request-modal").hide()
+    }, 300);
+
+})
