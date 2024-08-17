@@ -162,3 +162,33 @@ document.addEventListener("DOMContentLoaded", () => {
 $(".top-rate-cart").on("contextmenu", function(e) {
     e.preventDefault();
 });
+// TeaserShowVideo
+$('#teaser-play-button').click(function (){
+    $("#overlay").show().animate({scale:'1'},300);
+    let videoName = this.getAttribute('data-video-name');
+    let videoConfig = this.getAttribute('data-video-config');
+    $('#videoItem').addClass('active');
+    $('#videoContainerCloseIcon').show();
+    $('#videoContainerCloseIcon').addClass('active');
+    $('#videoIframe').addClass('active');
+    $('#videoIframe').attr('src',`https://player.arvancloud.ir/index.html?config=${videoConfig}&skin=shaka`);
+    $('#videoIframe').attr('name',videoName);
+})
+$('#overlay').click(function (){
+    $("#overlay").animate({scale: 0}, 300, function(){$(this).hide();});
+    $('#videoItem').removeClass('active');
+    $('#videoContainerCloseIcon').hide();
+    $('#videoContainerCloseIcon').removeClass('active');
+    $('#videoIframe').removeClass('active');
+    $('#videoIframe').attr('src','');
+    $('#videoIframe').attr('name','');
+})
+$('#videoContainerCloseIcon').click(function (){
+    $("#overlay").animate({scale: 0}, 300, function(){$(this).hide();});
+    $('#videoItem').removeClass('active');
+    $('#videoContainerCloseIcon').hide();
+    $('#videoContainerCloseIcon').removeClass('active');
+    $('#videoIframe').removeClass('active');
+    $('#videoIframe').attr('src','');
+    $('#videoIframe').attr('name','');
+})

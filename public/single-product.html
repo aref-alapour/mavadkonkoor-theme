@@ -212,9 +212,11 @@
                 مهندسی مواد و متالورژی</h1>
             <figure class="relative">
                 <img src="assets/images/product/class.jpg" alt="" class="rounded-[30px] aspect-video">
+                <button id="teaser-play-button" data-video-name="h_1080_1137k.mp4" data-video-config="https://ez.arvanvod.ir/QbeA1kLMdz/PpRwNvwJ0K/origin_config.json">
                 <svg class="w-14 h-14 md:w-24 md:h-24 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
                     <use href="#mavad-class-play-icon"></use>
                 </svg>
+                </button>
             </figure>
             <!--Content-->
             <section class="my-16">
@@ -1576,6 +1578,18 @@
 <!--Footer End-->
 <div id="overlay" class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-[110] transition-all"
      style="display: none;"></div>
+<div class="video-container">
+    <button id="videoContainerCloseIcon"
+            class="video-icon-close"
+            style="display: none"><span class="mt-0.5">×</span></button>
+    <div class="video-item-iframe" id="videoItem">
+        <iframe id="videoIframe" src=""
+                style="border:0 #ffffff none;" name="" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+        </iframe>
+    </div>
+</div>
 </body>
 <script src="./assets/js/jquery-3.7.1.min.js"></script>
 <script src="./assets/js/chart.js"></script>
