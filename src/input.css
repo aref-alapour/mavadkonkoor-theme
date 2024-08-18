@@ -692,3 +692,33 @@ form.checkout.woocommerce-checkout button[type="submit"]:hover {
 .video-icon-close.active {
     @apply -translate-x-0;
 }
+div#clock {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+div#clock div {
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 45px;
+    height: 50px;
+    color: #dafeff;
+    text-shadow: -1px -1px 0px #b6feff;
+    background: radial-gradient(at 30% 15%, #ffa767, #cc5701);
+    box-shadow: 0px 3px 5px rgba(67, 67, 67, 0.5),inset 1px 4px 5px rgba(255,255,255,.7), inset -1px -4px 5px rgba(0,0,0,.2);
+    position: relative;
+}
+@media screen and (max-width: 700px) {
+    div#clock div {
+        height: 45px;
+    }
+}
+.festivel-khordad {
+    background:linear-gradient(40deg, rgb(178, 152, 246), rgb(81, 38, 190)), url("../images/barg-2-1.png");
+    background-size:contain;
+    background-repeat: repeat-x;
+}
