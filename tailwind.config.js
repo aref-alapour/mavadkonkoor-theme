@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     './public/*.html',
-    './public/panel/user/*.php',
     './public/assets/js/*.js'
   ],
   darkMode: 'class',
