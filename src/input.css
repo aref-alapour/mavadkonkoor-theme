@@ -194,7 +194,24 @@
     }
   }
 }
+/* Custom Scrollbar Styles for WebKit Browsers */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height for horizontal scrollbar */
+}
 
+::-webkit-scrollbar-track {
+  background: #F3F4F5; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00B8E9; /* Color of the draggable part */
+  border-radius: 6px; /* Round edges */
+  transition: all 0.3s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00c8ff; /* Color on hover */
+}
 .showcaseSlider-pagination .swiper-pagination-bullet {
   background: #9c9c9c;
   transition: all 0.3s ease;
@@ -206,7 +223,32 @@
   width: 20px;
   border-radius: 30px;
 }
+.comments-exprince-scrollbar::-webkit-scrollbar-track {
+  background: #F0EEF6;
+  border-radius: 8px;
+  /* Background of the track */
+}
 
+.comments-exprince-scrollbar::-webkit-scrollbar-thumb {
+  background: #D0C4ED;
+  border: 1px solid #BFAFE6;
+  /* Color of the draggable part */
+  border-radius: 6px;
+  /* Round edges */
+  transition: all 0.3s ease-in-out;
+}
+
+.comments-exprince-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #bba9e9;
+  /* Color on hover */
+}
+
+.comments-exprince-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  /* Width of the scrollbar */
+  height: 8px;
+  /* Height for horizontal scrollbar */
+}
 .swiper.horizontal-default-slider > .swiper-wrapper > .swiper-slide,
 .swiper.book-slider > .swiper-wrapper > .swiper-slide {
   transform: unset;
